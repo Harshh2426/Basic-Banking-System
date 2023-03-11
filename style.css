@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+:root {
+  --orange-color: #f99d27;
+  --red-color: #b02a30;
+  --blue-color: #005b75;
+  --white-color: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+  height: 100vh;
+}
+
+/* LOADING EFFECT */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: var(--white-color) url("pree.webp") no-repeat center center;
+  z-index: 999;
+}
+
+/* NAVBAR SECTION */
+
+.navbar-brand {
+  padding-left: 3rem;
+  font-size: 3.5rem;
+  color: var(--white-color) !important;
+}
+
+.nav-link {
+  margin: 1rem;
+  color: var(--white-color) !important;
+}
+.nav-item a {
+  font-size: 1.8rem !important;
+  padding: 1rem 2rem !important;
+}
+
+.nav-link:hover {
+  border-radius: 7px !important;
+  background-color: var(--orange-color);
+  transition: all 0.5s;
+}
+
+.nav-link:hover.nav-link {
+  transition: all 0.5s;
+  color: var(--blue-color) !important;
+}
+.navbar-toggler {
+  border: 3px solid var(--white-color) !important;
+  color: var(--white-color) !important;
+  padding: 1rem;
+}
+.navbar-toggler-icon {
+  padding: 1.5rem;
+}
+
+/* HERO SECTION */
+
+.hero-content {
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-color);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.hero-img {
+  height: 50vh;
+  width: 100%;
+}
+.main-content {
+  font-size: 9rem;
+  color: var(--orange-color);
+}
+.secondary-text {
+  font-size: 1.5rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-btn {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 162%;
+  background-color: var(--orange-color);
+  color: var(--blue-color) !important;
+  transition: all 0.3s;
+}
+
+.hero-btn:hover {
+  text-decoration: none;
+  background-color: #dc860c;
+}
+
+/* FOOTER */
+
+#foot {
+  width: 100%;
+  height: 8vh;
+  margin-top: auto;
+  background-color: #f2e9e4;
+}
+
+.foo {
+  height: 100%;
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-icons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-content {
+  font-size: 1.5rem;
+}
+
+.social-icons li {
+  list-style: none;
+  display: inline;
+}
+
+.github,
+.linkedin {
+  color: #24292e;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 766px) {
+  .hero-imgg {
+    display: none;
+    visibility: hidden;
+  }
+  #foot{
+    height: 10vh;
+  }
+  .foo {
+    /* padding: 0.5rem; */
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

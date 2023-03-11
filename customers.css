@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  html {
+    overflow-x: hidden;
+    font-size: 62.5%;
+  }
+  
+  :root {
+    --orange-color: #f99d27;
+    --red-color: #b02a30;
+    --blue-color: #005b75;
+    --white-color: #fff;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    height: 100vh;
+  }
+
+  /* NAVBAR */
+
+.navbar-brand {
+    padding-left: 3rem;
+    font-size: 3.5rem;
+    color: var(--white-color) !important;
+  }
+  
+  .nav-link {
+    margin: 1rem;
+    color: var(--white-color) !important;
+  }
+  .nav-item a {
+    font-size: 1.8rem !important;
+    padding: 1rem 2rem !important;
+  }
+  
+  .nav-link:hover {
+    border-radius: 7px !important;
+    background-color: var(--orange-color);
+    transition: all 0.5s;
+  }
+  
+  .nav-link:hover.nav-link {
+    transition: all 0.5s;
+    color: var(--blue-color) !important;
+  }
+  .navbar-toggler {
+    border: 3px solid var(--white-color) !important;
+    color: var(--white-color) !important;
+    padding: 1rem;
+  }
+  .navbar-toggler-icon {
+    padding: 1.5rem;
+  }
+
+  /* UTILITIES CSS */
+
+.my-info{
+    padding: 2rem 5rem;
+}
+
+.btn-info{
+    padding: 1rem 1.2rem;
+    background-color: var(--orange-color)!important;
+    color: var(--blue-color)!important;
+    margin-left: 5px;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.btn-info:hover{
+    background-color: rgb(250, 112, 6)!important;
+}
